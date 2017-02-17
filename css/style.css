@@ -19,6 +19,7 @@ h1,h2,h3,h4,h5,h6 {
 h4,h5,h6{
 	line-height: normal;
 	text-align: left;
+	display: inline-block;
 }
 
 h1 {
@@ -36,17 +37,19 @@ h3 {
 h4 {
 	font-size: 2em;
 	color:#9c27b0;
-	font-weight: 100;
+	font-weight: 400;
+	display: block;
 }
 
 h5 {
 	font-size: 1.5em;
 	color: #4d4d4d;
+	font-weight: 100;
 }
 
 h6 {
 	font-size: 1em;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .header {
@@ -61,12 +64,16 @@ h6 {
 	color: grey;
 }
 
-.page {
+.page, .long-page {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	padding: 3em 2em 1em;
 	/*border:1px solid red;*/
+}
+
+.long-page {
+	height: auto;
 }
 
 .page-title {
@@ -79,12 +86,23 @@ h6 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.left-container {
+	width: 75%;
+	min-width: 300px;
+	height: 100%;
 }
 
 .main-img {
-	width: 30%;
-	height: auto;
-	background-image: url('../assets/gg_large.png')
+	background-image: url('../assets/gg_large.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 0;
+    padding-top: 66.64%; /* (img-height / img-width * container-width) */
+                /* (853 / 1280 * 100) */
 }
 
 .title-holder {
@@ -138,6 +156,50 @@ h6 {
 
 }
 
+.roles-list {
+	list-style: none;
+	padding: 0;
+}
+
+.roles-list li:before {
+	content: '* ';
+	font-weight: 400;
+	vertical-align: middle;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+}
+
+.content p {
+	min-width: 300px;
+}
+
+.small-img-container {
+	/*height: 300px;*/
+	width: 100%;
+	min-height: 300px;
+	margin-right: 1em;
+	/*min-width: 250px;*/
+
+}
+.small-img {
+	display:inline-block;
+	height: 100%;
+	width: 100%;
+	min-width: 120px;
+	min-height:150px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#small-1{
+	background-image: url('../assets/gg_small_1.png');
+}
 
 /*==============*/
 /*=== Mobile ===*/
