@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="../asstes/favicon.png"/>
 	<meta charset="utf-8">
 
 	<title>Dor tal Portfolio</title>
@@ -19,21 +19,22 @@
 	  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
 	  crossorigin="anonymous">
 	</script>
+	<script src="https://use.fontawesome.com/e38d43ebd9.js"></script>
 <script src="js/scripts.js"></script>
 
 </head>
 
 <body>
 	<!-- Left menu element-->
-	<div class="side-menu">
+	<nav class="side-menu">
 	 	<ul class= "menu-list">
 			<li><a href="#page-1">Home</a></li>
-			<li><a href="#page-2">Projects</a></li>
+			<li><a href="#page-2">Works</a></li>
 			<li><a href="#page-3">About</a></li>
 			<li><a href="#page-4">Contact</a></li>
 		</ul>
 		<div class="menu-background"></div>
-	</div>
+	</nav>
 	
 	<div class="menu-icon">
 		<button id="hamburger">&#9776; </button>
@@ -49,9 +50,8 @@
 	</div>
 
 	<div class="long-page">
-		<div class="page-title" id="page-2">
-			<h4>Projects</h4>
-			<h5></h5>
+		<div class="page-title sticky" id="page-2">
+			<h4>Works</h4>
 		</div>
 		<div class="projects-text">
 			<h6>
@@ -99,18 +99,36 @@
 			</div>
 		</div>
 	</div>
-	<div class="long-page">
-		<div class="page-title" id="page-3">
+	<div class="long-page" >
+		<div class="page-title sticky" id="page-3">
 			<h4>About me</h4>
-			<h5></h5>
+		</div>
+		<div class="about-text">
 			<p>I was born in Israel in 1983, and have lived in Tel Aviv for the last eight years. Since I can remember, I have been fascinated by nature and animals especially.
 			In 2007 I finished my military service in the IAF after seven years. During that period of time I was exposed to cutting-edge technology and experienced great challenges. 
 			At 2009 I started Industrial design studies at Bezalel Academy of Art and Design in Jerusalem. During that time I also studied at Pratt institute in New York as a part of a student exchange program. 
-			Graduated  Bezalel Academy of Arts and Design in 2013.</p>
+			Graduated  Bezalel Academy of Arts and Design in 2013.
+			</p>
+		</div>
+		<div class="about-img-container">
+			<div class="about-img">
+			</div>
 		</div>
 	</div>
-
+	<div class="page" id="page-4">
+		<div class="page-title sticky" >
+			<h4>Contact</h4>
+		</div>
+		<div class="title-holder">
+			<h3>Stop for coffee</h3>
+			<a href="https://www.linkedin.com/in/dortal/"><h2 style="color:#0077B5;cursor: pointer;">Linkedin</h2></a>
+			<h2>Mail</h2>
+		</div>
+	</div>
 </body>
+<footer>
+	this is the end my friend, check <a href="#page-1"><b>My works</b></a>
+</footer>
 </html>
 
 
