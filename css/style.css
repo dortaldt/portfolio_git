@@ -153,7 +153,7 @@ h6 {
 /*=====================*/
 /*=== flying button ===*/
 /*=====================*/
-
+/*
 .flying-btn {
 	padding: auto;
 	display: flex;
@@ -175,7 +175,7 @@ h6 {
 	line-height: 5em;
 
 }
-
+*/
 /*=====================*/
 /*== haburger button ==*/
 /*=====================*/
@@ -331,7 +331,7 @@ h6 {
 
 @media only screen and (max-width: 1140px)  {
 
-	.page-title, .roles {
+	.page-title {
 		padding-left: 4em;
 	}
 
