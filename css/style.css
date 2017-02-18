@@ -73,6 +73,65 @@ h6 {
 	color: grey;
 }
 
+/*==============*/
+/*===projects===*/
+/*==============*/
+
+.projects-container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	/*justify-content: center;*/
+}
+
+.project {
+	width: 400px;
+	height: auto;
+	margin: 1em auto;
+}
+
+.project:hover {
+	/*border-bottom: 2px solid #9c27b0;*/
+	box-shadow: 0px -2px 0px #9c27b0 inset;
+}
+
+.project * {
+	cursor: pointer;
+}
+
+.project h5 {
+	display: inline;
+	/*font-weight: 400;*/
+}
+
+.project-img{
+	width: 400px;
+	height: 240px;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+#project-img-1 {
+	background-image: url('../assets/project-banner-gg-2.png');
+}
+
+#project-img-2 {
+	background-image: url('../assets/project-banner-predict.jpg');
+	background-size: 400px;
+}
+
+#project-img-3 {
+	background-image: url('../assets/project-banner-playdog.png');
+}
+
+#project-img-4 {
+	background-image: url('../assets/project-banner-circuito.png');
+}
+
 .page, .long-page {
 	height: 100vh;
 	display: flex;
@@ -359,9 +418,9 @@ h6 {
         font-size: 38px;
     }
 
-    h4, h5 {
+   /* h4, h5 {
 		padding-left: 144px;
-	}
+	}*/
 
     .page, .long-page{
     	margin-left: 0.5em;
@@ -383,10 +442,10 @@ h6 {
 }
 
 @media only screen and (max-width: 1120px)  {
-
+/*
 	h4, h5 {
 		padding-left: 64px;
-	}
+	}*/
 
 }
 
