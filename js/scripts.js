@@ -1,7 +1,12 @@
 
-//smoothe scroll//
+
 
 $(document).ready(function(){
+
+  //====================//
+  //===smoothe scroll===//
+  //====================//
+
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -15,4 +20,20 @@ $(document).ready(function(){
       });
     } 
   });
+
+  //====================//
+  //=====side menu======//
+  //====================//
+
+  $('#hamburger').on('click', function(){
+    $('.side-menu').css("left", "0");
+    $('.menu-list').css("left", "0");
+  })
+  $(".menu-list").on('click', function(){
+    $('.side-menu').css("left", "-100vw");
+    $('.menu-list').css("left", "-100vw");
+  })
+
 });
+
+
