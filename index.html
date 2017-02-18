@@ -12,6 +12,8 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jPushMenu.css" />
+
 	  <!-- JQuert -->
 	<script
 	  src="https://code.jquery.com/jquery-3.1.1.js"
@@ -19,14 +21,25 @@
 	  crossorigin="anonymous">
 	</script>
 <script src="js/scripts.js"></script>
+<!--load jPushMenu, required-->
+<script src="js/jPushMenu.js"></script>
 </head>
 
 <body>
-<!-- 	<div class="header">
-		<span>call Header</span>
-		<span>text Header</span>
-		<span>email Header</span>
-  	</div> -->
+	<!-- Left menu element-->
+	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+		<h3>Menu</h3>
+		<a href="#page-1">Home</a>
+		<a href="#page-2">Givin Guru</a>
+		<a href="#page-3">Circuito.io</a>
+		<a href="#page-4">Predictables</a>
+		<a href="#page-5">PlayDog</a>
+		<a href="#page-6">Let's talk</a>
+	</nav>
+
+	<div class="pushMenu">
+		<button class="toggle-menu menu-left push-body" id="hamburger">&#9776; </button>
+	</div>
 
   	<div class="flying-btn">
   		<div class="flying-inner">Let's talk</div>
@@ -41,12 +54,12 @@
 		</div>
 	</div>
 
-	<div class="long-page" id="page-2">
-		<div class="page-title sticky">
+	<div class="long-page">
+		<div class="page-title sticky" id="page-2">
 			<h4>Givin Guru</h4>
 			<h5>Gifting application</h5>
 			<h6>Android<h6>
-			<span class="title-google">
+			<span class="title-link-container">
 				<a href='https://play.google.com/store/apps/details?id=com.givinguru&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img class="google-play" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 			</span>
 		</div>
@@ -63,17 +76,34 @@
 					<div class="small-img-container">
 						<div class="small-img" id="small-1"></div>
 					</div>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare sollicitudin turpis, vel vulputate massa volutpat at. Praesent nisi metus, placerat et ultrices vel, suscipit ut risus. Suspendisse dignissim elit at eros rutrum, eu tempor nunc hendrerit. Donec volutpat vulputate arcu non aliquet.
-					</p>
+					<div>
+						<h5>Goal</h5>
+						<p>
+							The goal of GivinGuru app is to create a new online gifting experience by enabling a new communication channel between a gift buyer and the recipient
+						</p>
+					</div>
+				</div>
+				<div class="content ltr">
+					<div class="small-img-container">
+						<div class="small-img" id="small-2"></div>
+					</div>
+					<div>
+						<h5>Concept</h5>
+						<p>
+							The app was design as a “wish list”, the user can create a collection of interesting gifts and let the recipient select the one they wish to get
+						</p>
+					</div>
 				</div>
 				<div class="content">
 					<div class="small-img-container">
-						<div class="small-img" id="small-1"></div>
+						<div class="small-img" id="small-3"></div>
 					</div>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare sollicitudin turpis, vel vulputate massa volutpat at. Praesent nisi metus, placerat et ultrices vel, suscipit ut risus. Suspendisse dignissim elit at eros rutrum, eu tempor nunc hendrerit. Donec volutpat vulputate arcu non aliquet. In hac habitasse platea dictumst.
-					</p>
+					<div>
+						<h5>Usability and features</h5>
+						<ul>
+							<li>Adding any gift to the list is possible from any ecommerce app and web site</li>
+						</ul>
+					</div>
 				</div>
 				<div class="content">
 					<div class="video-container">
@@ -88,11 +118,16 @@
 		</div>
 	</div>
 
-	<div class="long-page" id="page-3">
-		<div class="page-title sticky">
+	<div class="long-page">
+		<div class="page-title sticky" id="page-3">
 			<h4>PlayDog</h4>
 			<h5>Interactive game for smart dogs</h5>
 			<h6>Web mobile<h6>
+			<div class="title-link-container">
+				<a class="title-link flat-btn">
+					visit website
+				</a>
+			</div>
 		</div>
 		<div class="page-content">
 			<div class='left'>

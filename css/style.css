@@ -1,6 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
+	font-weight: 100;
 	color: #2d2d2d;
 	margin: 0 1em;
 }
@@ -93,8 +94,9 @@ h6 {
 }
 
 .left-container {
-	width: 75%;
+	max-width: 700px;
 	min-width: 300px;
+	width: 70%;
 	height: 100%;
 }
 
@@ -138,7 +140,7 @@ h6 {
 	background-color: transparent;
 	border: 1px solid #9c27b0;
 	/*border-radius: 2px;*/
-	padding: 6px 16px 12px;
+	padding: 0.5em 1em;
 	margin: 16px auto;
 	color: #9c27b0;
 	transition: color 0.1s, background-color 0.1s;
@@ -174,17 +176,37 @@ h6 {
 
 }
 
+/*=====================*/
+/*== haburger button ==*/
+/*=====================*/
+
+#hamburger {
+	position: fixed;
+	top:0.5em;
+	left: 1em;
+	border:none;
+	font-size: 2em;
+	background-color: transparent;
+	color: #9c27b0;
+	z-index: 3;
+
+}
+
 .roles-list {
 	list-style: none;
 	padding: 0;
+	margin: 0.75em auto;
 }
 
-.roles-list li:before {
-	content: '* ';
-	font-weight: 400;
-	vertical-align: middle;
-	font-size: 1.5em;
-	line-height: 1em;
+.roles-list li{
+	line-height: 1.5em;
+	width: auto;
+	padding: 0.25em 1em;
+	background-color: #9c27b0;
+	color: white;
+	border-radius: 1.5em; 
+	display: inline-block;
+	margin: 0.25em auto;
 }
 
 .content {
@@ -195,15 +217,25 @@ h6 {
 
 .content p {
 	margin: 0;
-	max-width: 500px;
+	/*max-width: 500px;*/
+}
+
+.ltr {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.ltr .small-img-container{
+	margin-left: 1em;
+	margin-right: 0;
 }
 
 .small-img-container {
-	/*height: 300px;*/
-	/*width: 100%;*/
-	min-height: 300px;
-	margin-right: 1em;
-	/*min-width: 250px;*/
+	/*height: 300px; */
+    min-width: 138px;
+    min-height: 300px;
+    margin-right: 1em;
+    /* min-width: 250px; */
 
 }
 .small-img {
@@ -218,6 +250,29 @@ h6 {
 
 #small-1{
 	background-image: url('../assets/gg_small_1.png');
+}
+
+#small-2{
+	background-image: url('../assets/gg_small_2.png');
+}
+
+#small-3{
+	background-image: url('../assets/gg_small_3.png');
+}
+
+#small-4{
+	background-image: url('../assets/gg_small_4.png');
+}
+
+.title-link-container {
+	position: absolute;
+    top: 0.75em;
+    right: 1em;
+}
+
+.title-link {
+	font-size: 1em;
+
 }
 
 .google-play{
@@ -250,6 +305,7 @@ h6 {
 /*==============*/
 
 @media only screen and (max-device-width: 480px)  {
+
     body {
         font-size: 38px;
     }
@@ -270,6 +326,13 @@ h6 {
 
 	.small-img-container {
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1140px)  {
+
+	.page-title, .roles {
+		padding-left: 4em;
 	}
 
 }
