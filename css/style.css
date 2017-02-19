@@ -349,7 +349,7 @@ h6 {
 
 .page-section {
 	margin: 8em 0;
-	display: flex;
+	display: inline-flex;
 	height: auto;
 }
 
@@ -364,6 +364,23 @@ h6 {
 	margin: 1em auto;
 	width: 100%;
 }
+
+.gifs-container {
+	display: flex;
+}
+
+.section-img {
+	display:inline-block;
+	height: 23em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	box-shadow: 3px 6px 10px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.no-shadow {
+	box-shadow: none;
+}
+
 
 .section-text {
 	width: 38%;
@@ -385,13 +402,6 @@ h6 {
 	margin: 1em auto;
 }
 
-.section-img {
-	display:inline-block;
-	height: 23em;
-	background-size: contain;
-	background-repeat: no-repeat;
-	box-shadow: 3px 6px 10px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.23);
-}
 
 #section-img-1{
 	background-image: url('../assets/gg_1.png');
