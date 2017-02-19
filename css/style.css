@@ -89,7 +89,7 @@ h6 {
 .project {
 	width: 400px;
 	height: auto;
-	margin-right: 1em;
+	margin: 1em 1em 1em 0;
 }
 
 .project:hover {
@@ -348,7 +348,7 @@ h6 {
 }
 
 .page-section {
-	margin: 8em 0;
+	margin: 3em 0;
 	display: inline-flex;
 	height: auto;
 }
@@ -391,7 +391,7 @@ h6 {
 .section-img-container {
 	display: flex;
 	flex-direction: column;
-	margin: auto 0.5em;
+	margin: 1em 0.5em;
 }
 .page-section ul {
 	max-width: 30em;
