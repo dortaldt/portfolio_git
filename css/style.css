@@ -174,8 +174,8 @@ h6 {
 
 .page-title {
 	width: auto;
-	width: 100%;
 	display: inline-block;
+	padding-bottom: 1em;
 }
 
 .page-header {
@@ -381,6 +381,9 @@ h6 {
 	box-shadow: none;
 }
 
+.gg-img {
+	height: 21em;
+}
 
 .section-text {
 	width: 38%;

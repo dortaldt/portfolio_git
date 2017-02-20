@@ -34,6 +34,12 @@ $(document).ready(function(){
     $('.menu-list').css("left", "-100vw");
   })
 
+  //====================//
+  //=====ZOOM IMGS======//
+  //====================//
+
+  $(".fancybox").fancybox();
+
 });
 
 
