@@ -168,6 +168,14 @@ h6 {
 	/*border:1px solid red;*/
 }
 
+#page-1 {
+	padding-top: 0;
+}
+
+#page-4 h2 {
+	cursor: pointer;
+}
+
 .long-page {
 	height: auto;
 }
@@ -238,7 +246,8 @@ h6 {
 }
 
 .flat-btn:hover {
-	background-color: rgba(156, 39, 176, 0.12);
+	background-color: rgba(156, 39, 176, 1);
+	color:white;
 }
 
 .fa {
