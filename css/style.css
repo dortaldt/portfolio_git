@@ -225,6 +225,11 @@ h6 {
 	align-content: space-between;
 }
 
+.btn-container {
+	text-align:center;
+	height: auto;
+}
+
 .flat-btn {
 	font-size: 2em;
 	font-weight: 100;
