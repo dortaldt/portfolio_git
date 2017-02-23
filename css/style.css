@@ -533,7 +533,7 @@ h6 {
 		padding-left: 144px;
 	}*/
 
-    .page, .long-page{
+    .page, .long-page {
     	margin-left: 0.5em;
     	margin-left: 0.5em;
     	margin: 0;
@@ -544,15 +544,19 @@ h6 {
 		min-height: 1000px;
 	}
 
-	.page-section{
+	.page-section {
 		flex-wrap: wrap;
 	}
-
 
 	.section-img {
 		max-height: 23em;
     	max-width: 100%;
-    	height: auto
+    	height: auto;
+    	margin:1em auto;
+	}
+
+	.section-img-container {
+		margin: 1em auto;
 	}
 
 	.section-text {
