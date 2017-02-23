@@ -365,6 +365,7 @@ h6 {
 	margin: 3em 0;
 	display: inline-flex;
 	height: auto;
+	flex-wrap: wrap;
 }
 
 .page-section h5{
@@ -542,6 +543,13 @@ h6 {
 		width: 100%;
 		min-height: 1000px;
 	}
+
+	.section-img {
+		max-height: 23em;
+    	max-width: 100%;
+    	height: auto
+	}
+
 	.left-container {
 		width: 100%;
 	}
@@ -559,13 +567,6 @@ footer {
 
 }
 
-@media only screen and (max-width: 1120px)  {
-/*
-	h4, h5 {
-		padding-left: 64px;
-	}*/
-
-}
 
 
 
