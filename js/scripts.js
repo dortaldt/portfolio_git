@@ -38,9 +38,10 @@ $(document).ready(function(){
   //=====ZOOM IMGS======//
   //====================//
 
-  $('.section-img').click(function(){
+  $('.section-img-container').click(function(){
     $(this).toggleClass('img-zoom');
-    console.log('zoom');  
+    $('p', this).toggle();
+    $('.close-btn', this).toggle();
   });
 
 });
