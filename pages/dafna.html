@@ -1,17 +1,27 @@
 <html>
 <head>
-	<link rel="stylesheet" href="css/dafna.css">
+	<link rel="stylesheet" href="../css/dafna.css">
+	<link href="https://fonts.googleapis.com/css?family=Alef:400,700&amp;subset=hebrew" rel="stylesheet">
 <body>
-	<div class="content">
-		<div id="update">
-		</div>
-		<div>
-			<div id="answer"><h1>No</h1></div>
-		</div>
-		<div>
-			<button>Did Dafna give birth yet?</button>
+	<div class="wraper">
+		<div class="content">
+			עודכן לאחרונה
+			<div id="update">
+			</div>
+			<div>
+				<div id="answer-cont">
+					<div class="loader-cont">
+						<div class="loader">...מממ</div>
+						<div class="loader">...בודקים</div>
+					</div>
+					<div class="no">!לא</div>
+				</div>
+			</div>
+			<div>
+				<button onclick="animateText()">??ועכשיו</button>
+			</div>
 		</div>
 	</div>
 </body>
-<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="../js/dafna.js"></script>
 </html>
