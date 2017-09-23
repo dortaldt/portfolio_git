@@ -39,7 +39,7 @@ button:hover {
 }
 
 .content {
-	font-size: 1.6em;
+	font-size: 2em;
 	margin: auto;
 	text-align: center;
 }
@@ -54,7 +54,7 @@ button:hover {
 }
 
 .no {
-    border: 12px solid;
+    border: 12px solid #2f2f2f;
     color: #2f2f2f;
     font-size: 8rem;
     border-radius: 360px;
@@ -66,10 +66,13 @@ button:hover {
     margin: 1rem auto 4rem auto;
 }
 
+#noo {
+	font-size: 5rem;
+	margin-bottom: 0.7rem;
+}
+
 #no-upload {
-	background-color: #2f2f2f;
 	color: white;
-	transition: background-color 0.3s;
 }
 
 @media only screen and (max-device-width: 770px) {
@@ -79,7 +82,6 @@ button:hover {
 
     .no {
 	    border: 16px solid;
-	    color: #2f2f2f;
 	    font-size: 12rem;
 	    border-radius: 512px;
 	    height: 512px;
@@ -88,5 +90,9 @@ button:hover {
 	    text-align: center;
 	    vertical-align: middle;
 	    margin: 1rem auto 4rem auto;
+    }
+
+    #last, #update {
+    	font-size: 2rem;
     }
 }

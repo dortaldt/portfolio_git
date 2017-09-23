@@ -20,13 +20,13 @@ var no = document.getElementById('wait')
 
 var animateText = function() {
 	msgs[0].className = 'loader show'
+	no.id = 'no-upload'
 	setTimeout(function(){
 		msgs[0].className = 'loader'
 		msgs[1].className = 'loader show'
 		setTimeout(function(){
 			msgs[1].className = 'loader'
 			printUpdate()
-			no.id = 'no-upload'
 			setTimeout(function(){
 				no.id = ' '
 			},100)
