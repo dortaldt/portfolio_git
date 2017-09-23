@@ -19,6 +19,7 @@ var msgs = document.getElementsByClassName('loader');
 var no = document.getElementById('wait')
 
 var animateText = function() {
+	ga('send', 'event', 'Now button', 'click')
 	msgs[0].className = 'loader show'
 	no.id = 'no-upload'
 	setTimeout(function(){
