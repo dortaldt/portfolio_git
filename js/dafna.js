@@ -16,6 +16,7 @@ var printUpdate = function() {
 }
 
 var msgs = document.getElementsByClassName('loader');
+var no = document.getElementById('wait')
 
 var animateText = function() {
 	msgs[0].className = 'loader show'
@@ -25,6 +26,10 @@ var animateText = function() {
 		setTimeout(function(){
 			msgs[1].className = 'loader'
 			printUpdate()
+			no.id = 'no-upload'
+			setTimeout(function(){
+				no.id = ' '
+			},100)
 		},2000);
 	},2000);
 }

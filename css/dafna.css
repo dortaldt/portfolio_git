@@ -66,8 +66,27 @@ button:hover {
     margin: 1rem auto 4rem auto;
 }
 
+#no-upload {
+	background-color: #2f2f2f;
+	color: white;
+	transition: background-color 0.3s;
+}
+
 @media only screen and (max-device-width: 770px) {
     body {
         font-size: 34px;
+    }
+
+    .no {
+	    border: 16px solid;
+	    color: #2f2f2f;
+	    font-size: 12rem;
+	    border-radius: 512px;
+	    height: 512px;
+	    width: 512px;
+	    line-height: 32rem;
+	    text-align: center;
+	    vertical-align: middle;
+	    margin: 1rem auto 4rem auto;
     }
 }
