@@ -1,11 +1,12 @@
 body {
 	font-family: 'Alef', sans-serif;
+	font-size:16px;
 }
 
 button {
-	height: 54px;
-    width: 130px;
-    font-size: 24px;
+    height: 3em;
+    width: 7em;
+    font-size: 1em;
     font-family: alef;
     border: none;
     color: white;
@@ -26,30 +27,26 @@ button:hover {
 .wraper{
 	height: 100%;
 	display: flex;
-
 }
 
 .loader-cont {
-	height: 30px;
-	line-height: 30px;
-	font-size: 24px;
+	height: 4rem;
+	line-height: 4rem ;
+	font-size: 3rem;
 	display: flex;
 	justify-content: space-around;
 	font-style: italic;
 }
 
 .content {
+	font-size: 1.6em;
 	margin: auto;
-	max-width: 200px;
 	text-align: center;
-}
-
-#answer {
-	font-size: 36px;
 }
 
 .loader {
 	display: none;
+	font-weight: 700
 }
 
 .show {
@@ -57,14 +54,20 @@ button:hover {
 }
 
 .no {
-    border: 6px solid;
+    border: 12px solid;
     color: #2f2f2f;
-    font-size: 90px;
-    border-radius: 101px;
-    height: 174px;
-    width: 174px;
-    line-height: 174px;
+    font-size: 8rem;
+    border-radius: 360px;
+    height: 256px;
+    width: 256px;
+    line-height: 16rem;
     text-align: center;
     vertical-align: middle;
-    margin: 16px auto 32px auto;
+    margin: 1rem auto 4rem auto;
+}
+
+@media only screen and (max-device-width: 770px) {
+    body {
+        font-size: 34px;
+    }
 }
