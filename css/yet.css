@@ -1,6 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
+	color: #383838;
 }
 
 form {
@@ -10,8 +11,9 @@ form {
 button,
 input[type=submit] {
     height: 3em;
-    width: 7em;
-    font-size: 1em;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    line-height: 2rem;
     border: none;
     color: white;
     border-radius: 4px;
@@ -73,6 +75,7 @@ input[type=text] {
 .wraper{
 	height: 100%;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .loader-cont {
@@ -91,7 +94,7 @@ input[type=text] {
 }
 
 .content {
-	font-size: 2em;
+	font-size: 2rem;
 	margin: auto;
 	text-align: center;
 	max-width: 800px;
@@ -101,6 +104,7 @@ input[type=text] {
 
 .site-header {
 	justify-content: space-between;
+	flex-wrap: wrap-reverse;
 }
 
 
@@ -111,7 +115,7 @@ input[type=text] {
 .no {
     border: 12px solid #2f2f2f;
     color: #2f2f2f;
-    font-size: 8rem;
+    font-size: 6rem;
     border-radius: 360px;
     height: 256px;
     width: 256px;
@@ -125,6 +129,9 @@ input[type=text] {
 	width: 100%;
 }
 
+.update-wrap {
+	font-size: 2rem;
+}
 #noo {
     font-family: 'Roboto slab';
 	font-size: 5rem;
@@ -135,6 +142,14 @@ input[type=text] {
 
 #no-upload {
 	color: white;
+}
+
+.form-cont {
+    padding: 2rem;
+    background-color: #efefef;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 1px 6px 12px rgba(0,0,0,0.25);
 }
 
 footer {
@@ -157,7 +172,20 @@ footer {
 
 @media only screen and (max-device-width: 770px) {
     body {
-        font-size: 34px;
+        font-size: 20px;
+    }
+
+    .content {
+    	max-width: 100%;
+    	margin: auto 1rem;
+    }
+    .site-header {
+    	font-size: 3rem;
+    }
+
+    .main-header {
+    	max-width: 100%;
+    	text-align: center;
     }
 
     .no {
@@ -171,6 +199,14 @@ footer {
 	    vertical-align: middle;
     }
 
+    form {
+    	font-size: 3rem;
+    }
+
+    input[type=text] {
+    	font-size: 3rem;
+    }
+
     #noo {
     	font-size: 7rem;
     }
@@ -182,4 +218,8 @@ footer {
     .links {
 		font-size: 2.5rem;
 	}	
+
+	footer {
+		font-size: 2rem;
+	}
 }
