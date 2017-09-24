@@ -24,20 +24,21 @@
 	<div class="wraper">
 		<div class="content dis-flex">
 			<div class="site-header dis-flex">
-				<div class="main-header">
+				<div class="main-header no-mob">
 					<span><h1>Let them answer themself</h1></span>
 				</div>
 				<div class="title-que-cont dis-flex">
 					<span class="title-que">Are you marrid yet?</span>
 					<span class="title-que">Dad, are we there yet?</span>
-					<span class="title-que">Did you give birth yet?</span>
+					<span class="title-que">Did you gave birth yet?</span>
 				</div>
 			</div>
-			<div class="form-cont dis-flex">
-				<form action="../pages/yet.html" class="dis-flex flex-col">
+			<div class="card dis-flex">
+				<form action="../pages/yet.html" class="dis-flex flex-col" id="form1">
 					<label for="question">What is the question they're keep nagging you about?</label>
 					<input type="text" name="que" id ="question" value ="Are we there yet??">
-					<input type="submit" value="Crete page!">
+					<button type="submit" form="form1" value="Submit">Create page!</button>
+					<!-- <input type="submit" value="Crete page!"> -->
 				</form>
 			</div>
 		</div>

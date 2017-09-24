@@ -1,48 +1,52 @@
-body {
+body,
+html {
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
 	color: #383838;
+	background: linear-gradient(to bottom right, #fff65e, #fffaaa);
 }
 
 form {
 	justify-content: space-around;
+	margin: auto;
 }
 
 button,
 input[type=submit] {
-    height: 3em;
-    padding: 2rem 4rem;
-    font-size: 2rem;
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     border: none;
     color: white;
     border-radius: 4px;
     box-shadow: 1px 6px 12px rgba(0,0,0,0.25);
-    background-color: #9C27B0;
+    background-color: #383838;
     margin: 16px auto
 }
 
 button:active,
 input[type=submit]:active {
 	box-shadow: none;
-	background-color:#691777;
-}
-
-button:hover,
-input[type=submit]:active {
-	background-color: #8c219e;
+	background-color:black;
 }
 
 label {
+	font-size: 1.5rem;
 	display: block;
+	color: #848484;
 }
 
 input[type=text] {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 	display: block;
-	padding: 1rem;
 	font-size: 2rem;
 	line-height: 3rem;
 	width: 100%;
+	border-bottom: 2px solid #691777;
+	border-top:0px;
+	border-left: 0px;
+	border-right: 0px;
 }
 
 .dis-flex {
@@ -88,9 +92,9 @@ input[type=text] {
 }
 
 .loader {
-	color: green;
+	color: #383838;
 	display: none;
-	font-weight: 700
+	font-weight: 700;
 }
 
 .content {
@@ -115,7 +119,7 @@ input[type=text] {
 .no {
     border: 12px solid #2f2f2f;
     color: #2f2f2f;
-    font-size: 6rem;
+    font-size: 5rem;
     border-radius: 360px;
     height: 256px;
     width: 256px;
@@ -123,6 +127,8 @@ input[type=text] {
     text-align: center;
     vertical-align: middle;
     margin: auto;
+    background-color: white;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.25);
 }
 
 .full-width {
@@ -130,25 +136,29 @@ input[type=text] {
 }
 
 .update-wrap {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 #noo {
     font-family: 'Roboto slab';
-	font-size: 5rem;
+	font-size: 4rem;
+	line-height: 1;
 	font-weight: 700;
 	margin-bottom: 0.7rem;
 	width: 100%;
 }
 
 #no-upload {
-	color: white;
+	color: transparent;
+	border: 12px solid transparent;
+	background-color: transparent;
+	box-shadow: none;
 }
 
-.form-cont {
+.card {
     padding: 2rem;
-    background-color: #efefef;
+    background-color: white;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 1px 6px 12px rgba(0,0,0,0.25);
 }
 
@@ -159,11 +169,11 @@ footer {
 }
 
 .copy-link {
-    border-radius: 300rem;
     background-color: transparent;
-    color: #9c27b0;
+    color: #383838;
     box-shadow: none;
-    height: 1rem;
+    font-size: 1rem;
+    text-decoration: underline
 }
 
 .links {
@@ -177,10 +187,11 @@ footer {
 
     .content {
     	max-width: 100%;
-    	margin: auto 1rem;
+    	margin: auto 2rem;
     }
+
     .site-header {
-    	font-size: 3rem;
+    	font-size: 5rem;
     }
 
     .main-header {
@@ -199,16 +210,60 @@ footer {
 	    vertical-align: middle;
     }
 
+    .loader {
+    	font-size: 6rem;
+		line-height: 6rem;
+    }
+
+    .btn-cont {
+    	margin-top: 3rem;
+    }
+
+/**************************/
+/********* Form ***********/
+/**************************/
+
     form {
     	font-size: 3rem;
+    	margin: 2rem;
     }
 
     input[type=text] {
     	font-size: 5rem;
     }
 
+    label {
+	font-size: 3rem;
+	display: block;
+	}
+
+	button,
+	input[type=submit] {
+    padding: 3rem 4rem;
+    font-size: 3rem;
+	}
+
+/**************************/
+/***** Dispaly class ******/
+/**************************/
+
+	.no-mob {
+		display: none;
+	}
+
+	.card {
+    padding: 2rem;
+	}	
+
+	.copy-link {
+		font-size: 2.5rem;
+	}
+
     #noo {
     	font-size: 7rem;
+    	height: 14rem;
+    	margin-top: 5rem;
+    	font-weight: 400;
     }
 
     #last, #update {
