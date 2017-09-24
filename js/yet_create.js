@@ -10,9 +10,9 @@ var time = function(){
 }
 
 var printUpdate = function() {
-	var current = time()
-	var oldTime = document.getElementById('update')
-	oldTime.innerHTML = current
+	var current = time();
+	var oldTime = document.getElementById('update-time');
+	oldTime.innerHTML = current;
 }
 
 var msgs = document.getElementsByClassName('loader');
@@ -37,8 +37,7 @@ var animateText = function() {
 
 printUpdate()
 
-//testing change question
-//?que=question
+//Get paremeters from URL:
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
@@ -48,17 +47,21 @@ function getParameterByName(name, url) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
-
+};
 var queVal = getParameterByName('que');
 var ansVal = getParameterByName('ans');
 
+//change the question and title values:
+
 var changeQ = function(){
 	var que = document.getElementById('noo');
-	var ans = document.getElementById('wait')
-	que.innerHTML = queVal
-	ans.innerHTML = ansVal
-}
+	var ans = document.getElementById('wait');
+	que.innerHTML = queVal;
+	// ans.innerHTML = ansVal;
+	document.title = queVal;
+};
+
+changeQ()
 
 
 

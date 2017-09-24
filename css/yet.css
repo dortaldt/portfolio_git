@@ -1,0 +1,186 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+}
+
+form {
+	justify-content: space-around;
+}
+
+button,
+input[type=submit] {
+    height: 3em;
+    width: 7em;
+    font-size: 1em;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 1px 6px 12px rgba(0,0,0,0.25);
+    background-color: #9C27B0;
+    margin: 16px auto
+}
+
+button:active,
+input[type=submit]:active {
+	box-shadow: none;
+	background-color:#691777;
+}
+
+button:hover,
+input[type=submit]:active {
+	background-color: #8c219e;
+}
+
+label {
+	display: block;
+}
+
+input[type=text] {
+	display: block;
+	padding: 1rem;
+	font-size: 2rem;
+	line-height: 3rem;
+	width: 100%;
+}
+
+.dis-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.main-header {
+	max-width: 300px;
+	text-align: left;
+	margin: auto;
+}
+
+.site-header {
+	width: 100%;
+}
+
+.title-que-cont{
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: left;
+	font-family: 'Roboto slab';
+	margin: auto;
+}
+
+.wraper{
+	height: 100%;
+	display: flex;
+}
+
+.loader-cont {
+	height: 4rem;
+	line-height: 4rem ;
+	font-size: 3rem;
+	display: flex;
+	justify-content: space-around;
+	font-style: italic;
+}
+
+.loader {
+	color: green;
+	display: none;
+	font-weight: 700
+}
+
+.content {
+	font-size: 2em;
+	margin: auto;
+	text-align: center;
+	max-width: 800px;
+	height: 90%;
+	justify-content: space-around;
+}
+
+.site-header {
+	justify-content: space-between;
+}
+
+
+.show {
+	display: block;
+}
+
+.no {
+    border: 12px solid #2f2f2f;
+    color: #2f2f2f;
+    font-size: 8rem;
+    border-radius: 360px;
+    height: 256px;
+    width: 256px;
+    line-height: 16rem;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.full-width {
+	width: 100%;
+}
+
+#noo {
+    font-family: 'Roboto slab';
+	font-size: 5rem;
+	font-weight: 700;
+	margin-bottom: 0.7rem;
+	width: 100%;
+}
+
+#no-upload {
+	color: white;
+}
+
+footer {
+	text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.copy-link {
+    border-radius: 300rem;
+    background-color: transparent;
+    color: #9c27b0;
+    box-shadow: none;
+    height: 1rem;
+}
+
+.links {
+	font-size: 1rem;
+}
+
+@media only screen and (max-device-width: 770px) {
+    body {
+        font-size: 34px;
+    }
+
+    .no {
+	    border: 16px solid;
+	    font-size: 12rem;
+	    border-radius: 512px;
+	    height: 512px;
+	    width: 512px;
+	    line-height: 32rem;
+	    text-align: center;
+	    vertical-align: middle;
+    }
+
+    #noo {
+    	font-size: 7rem;
+    }
+
+    #last, #update {
+    	font-size: 2rem;
+    }
+
+    .links {
+		font-size: 2.5rem;
+	}	
+}
