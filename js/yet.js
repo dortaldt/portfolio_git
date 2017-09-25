@@ -122,7 +122,6 @@ var copyTextToClipboard = function(text) {
   document.body.removeChild(textArea);
 }
 
-
 var copyLink = function() {
   copyTextToClipboard(location.href);
 };
