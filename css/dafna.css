@@ -75,6 +75,10 @@ button:hover {
 	color: white;
 }
 
+    footer {
+    	font-size: 1rem;
+    }
+
 @media only screen and (max-device-width: 770px) {
     body {
         font-size: 34px;
@@ -95,4 +99,6 @@ button:hover {
     #last, #update {
     	font-size: 2rem;
     }
+
+
 }
