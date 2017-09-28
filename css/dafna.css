@@ -75,9 +75,10 @@ button:hover {
 	color: white;
 }
 
-    footer {
-    	font-size: 1rem;
-    }
+footer {
+	margin-top: 2rem;
+	font-size: 1rem;
+}
 
 @media only screen and (max-device-width: 770px) {
     body {
