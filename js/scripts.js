@@ -8,7 +8,7 @@ $(document).ready(function(){
   //====================//
 
   $("a").on('click', function(event) {
-    if (this.hash !== "") {
+    if ((this.hash !== "") && (this.classList[2] !== "back-main")) {
       event.preventDefault();
       var hash = this.hash;
       // Using jQuery's animate() method to add smooth page scroll
@@ -38,7 +38,36 @@ $(document).ready(function(){
   //=====ZOOM IMGS======//
   //====================//
 
-  $(".fancybox").fancybox();
+  // $(".fancybox").fancybox(); 
+
+  //====================//
+  //=======TIPS=========//
+  //====================//
+
+  Object.keys(data).forEach(function(k){
+    var id = data[k].id
+    var content = data[k].content
+    var tipHTML = [
+        '<div class="tip-content">',
+          '<h5>Tip #',id, '</h5>',
+        '</div>',
+        '<div class="tip-img-container">',
+          '<img class="tip-img" src="../assets/tips/tip_',id,'.png">',
+        '</div>',
+        '<div class="tip-content">',
+          '<div>',
+            '<p>', content,
+            '</p>  ',
+          '</div>',
+        '</div>'
+    ].join('')
+
+    var div = document.createElement('div');
+    div.setAttribute('class', 'tip-container');
+    div.innerHTML = tipHTML;
+    document.getElementById('tips').appendChild(div);
+
+  });
 
 });
 

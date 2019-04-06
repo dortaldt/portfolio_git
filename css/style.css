@@ -1,9 +1,13 @@
-body {
+body,html {
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 	font-size: 16px;
 	font-weight: 300;
-	color: #2d2d2d;
-	margin: 0 1em;
+	color: #404040;
+	margin:0;
+	padding:0;
+	width: 100%;
+	/* overflow: hidden; */
+	/* left: 0; */
 }
 
 a{
@@ -34,6 +38,7 @@ h4,h5,h6{
 h1 {
 	font-size: 3em;
 	font-weight:500;
+	margin-bottom: 32px;
 }
 
 h2 {
@@ -42,24 +47,27 @@ h2 {
 
 h3 {
 	font-size: 2em;
-	font-weight: 100;
-	padding: 0 7rem;
+	font-weight: 300;
+	/* padding: 0 7rem; */
 }
 
 h4 {
 	font-size: 2em;
 	font-weight: 700;
 	display: block;
+	/* padding-left: 32px; */
+	padding-right: 32px;
 }
 
 h5 {
 	font-size: 1.5em;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 h6 {
 	font-size: 1em;
 	font-weight: 300;
+	/* padding: 32px; */
 }
 
 p {
@@ -87,14 +95,17 @@ p {
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
+	/* flex: 1 1; */
 	margin: auto;
 	justify-content: space-between;
 }
 
 .project {
-	width: 400px;
+	/* min-width: 431px; */
 	height: auto;
-	margin: 1rem 0;
+	display: flex;
+	margin: 1rem 32px;
+	flex: 1 300px;
 }
 
 .project:hover {
@@ -104,15 +115,26 @@ p {
 
 .project * {
 	cursor: pointer;
+	width: 100%;
 }
 
-.project h5 {
-	display: inline;
+.project h5,h6,p {
+	display: block;
+	/* padding-left: 32px; */
 	/*font-weight: 400;*/
 }
 
+.project h5,h6 {
+	display: inline;
+}
+
+.project p {
+	width: 90%;
+}
+
+
 .project-img{
-	width: 400px;
+	width: 100%;
 	height: 240px;
 	margin: 0;
 	background-repeat: no-repeat;
@@ -121,7 +143,9 @@ p {
 }
 
 .project-text{
-	margin: 0.5rem 0;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	/* width: 100%; */
 }
 
 #project-img-1 {
@@ -142,6 +166,10 @@ p {
 
 #project-img-5 {
 	background-image: url('../assets/notyet2.png');
+}
+
+#project-img-6 {
+	background-image: url('../assets/tips/tip_3.png');
 }
 
 .me-img {
@@ -179,9 +207,9 @@ p {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	padding: 3em 0em 1em;
-	margin: auto;
-	max-width: 960px;
+	/* padding: 3em 0em 1em; */
+	/* margin: auto; */
+	/* max-width: 960px; */
 	/*border:1px solid red;*/
 }
 
@@ -200,7 +228,8 @@ p {
 .page-title {
 	width: auto;
 	display: inline-block;
-    padding: 1rem 0;
+	padding: 1rem 0;
+	margin: 32px;
 }
 
 .page-header {
@@ -243,29 +272,31 @@ p {
 }
 
 .btn-container {
-	margin: 1rem;
+	margin: 32px;
 	text-align:center;
 	height: auto;
 }
 
 .flat-btn {
+	/* width: 100%; */
 	font-size: 1em;
 	font-weight: 500;
 	font-family: 'Open Sans', sans-serif;
 	display: inline-block;
 	background-color: transparent;
-	border: 2px solid #ce0baa;
+	border: 4px solid #ce0baa;
 	border-radius: 4px;
-	padding: 0.5em 1em;
-	margin: 16px auto;
+	padding: 16px 32px;
+	/* margin: 16px auto; */
 	color: #ce0baa;
 	transition: color 0.1s, background-color 0.1s;
 }
 
 .small-btn {
 	font-size: 1em;
-	margin: 1em auto;
-
+	/* margin: 1em auto; */
+	border: none;
+	/* padding: 0; */
 }
 
 .flat-btn:hover {
@@ -322,6 +353,49 @@ p {
 }
 
 /*=====================*/
+/*======== tips =======*/
+/*=====================*/
+
+.tips-sticky {
+	/* margin-left: -32px !important; */
+	/* margin-right: -32px !important; */
+	/* padding: 32px; */
+}
+.tip-container {
+	margin-bottom: 72px;
+	margin-left: 16px;
+	margin-right: 16px;
+	/* width: 100%; */
+	max-width: 407px;
+	display: flex;
+	flex-direction: column;
+	flex: 1 300px;
+	min-width: 400p;
+}
+.tip-img-container {
+	/* min-width: 400px; */
+	/* position: absolute; */
+	/* left: 0; */
+	/* min-width: 400px; */
+	/* height: 100px; */
+}
+
+.tip-img {
+	width: 100%;
+}
+
+.tip-content h3 {
+	display: inline-block;
+	margin-bottom: 32px;
+}
+
+.tip-content {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+
+/*=====================*/
 /*===== SIDE MENU =====*/
 /*=====================*/
 
@@ -364,7 +438,7 @@ p {
 .roles-list {
 	list-style: none;
 	padding: 0;
-	margin: 0.75em auto;
+	margin: 32px;
 }
 
 .roles-list li{
@@ -380,10 +454,11 @@ p {
 }
 
 .page-section {
-	margin: 3em 0;
-	display: inline-flex;
+	margin: 0;
+	display: flex;
 	height: auto;
-	/*flex-wrap: wrap;*/
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 .page-section h5{
@@ -393,6 +468,7 @@ p {
 
 .section-images {
 	display: flex;
+	/* flex-direction: column; */
 	flex-wrap: wrap;
 	margin: 1em auto;
 	width: 100%;
@@ -400,11 +476,13 @@ p {
 
 .gifs-container {
 	display: flex;
+	width: 100%;
 }
 
 .section-img {
-	display:inline-block;
-	max-height: 32rem;
+	width: 100%;
+	/* display:inline-block; */
+	/* max-height: 32rem; */
 	background-size: contain;
 	background-repeat: no-repeat;
 	box-shadow: 3px 6px 10px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.23);
@@ -421,7 +499,7 @@ p {
 .section-text {
 	width: 38%;
 	min-width: 15em;
-	margin-right: 1em;
+	margin: 32px;
 }
 
 #me-text {
@@ -431,11 +509,17 @@ p {
 .section-img-container {
 	display: flex;
 	flex-direction: column;
-	margin: auto;
+	margin-bottom: 32px;
+	margin-left: 16px;
+	margin-right: 16px;
+	flex: 1 384px;
+	/* width: 100%; */
+	/* max-width: 50%; */
 }
 
 .section-img-container p {
-	margin: 1rem 0;
+	margin-top: 32px;
+	/* width: 100%; */
 }
 .page-section ul {
 	max-width: 30em;
@@ -541,7 +625,9 @@ p {
   left: 0;
   right: 0;
   display: block;
-  background-color: rgba(255,255,255,0.9)
+  background-color: white;
+  margin: 0px;
+  padding: 16px;
 }
 
 
@@ -553,6 +639,11 @@ p {
 
     body {
         font-size: 38px;
+        /* max-width: none !important; */
+        /* width: 100% !important; */
+        margin: 0;
+        /* width: 100%; */
+        /* left: 0; */
     }
 
    /* h4, h5 {
@@ -561,17 +652,25 @@ p {
 	.project {
 		width: 100%;
 		margin: 0 auto 6rem auto;
+		flex: none;
 	}
 
 	.project-img {
-		height: 460px;
+		height: 700px;
 		width: 100%;
 	}
 
+	.project-text {
+		 padding-left: 32px; 
+		 width: auto; 
+	}
+
     .page, .long-page {
-    	margin-left: 0.5em;
-    	margin-left: 0.5em;
-    	margin: 0;
+    	/* margin-left: 0.5em; */
+    	/* margin-left: 0.5em; */
+    	/* margin: 0; */
+    	/* width: 100%; */
+    	/* padding: 32px; */
     }
 
     .main-img-container {
@@ -584,14 +683,16 @@ p {
 	}
 
 	.section-img {
-		max-height: 23em;
-    	max-width: 100%;
-    	height: auto;
-    	margin:1em auto;
+		/* max-height: 23em; */
+		width: 100%;
+		/* height: auto; */
+		margin: 16px 0;
 	}
 
 	.section-img-container {
-		margin: 1em auto;
+		margin: 1em 32px;
+		width: 100%;
+		flex: 1 542px;
 	}
 
 	.section-text {
@@ -604,6 +705,16 @@ p {
 
 	.small-img-container {
 		width: 100%;
+	}
+
+	.tip-container {
+		max-width: 100%;
+		margin: 0;
+		flex: none;
+		margin-bottom: 64px;
+	}
+	.tip-content {
+		margin: 32px;
 	}
 }
 

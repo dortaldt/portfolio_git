@@ -1,0 +1,26 @@
+data = [{
+        "id": 1,
+        "content": "Technology fails sometimes, a user fails sometimes - that's part of the game. Celebrate those failures and suggest a good way to go back on track."
+    },
+    {
+        "id": 2,
+        "content": ""
+    },
+    {
+        "id": 3,
+        "content": "This in-browser powerful tool can help you test new ideas quickly, based on the existing design and even from scratch!"
+    },
+    {
+        "id": 4,
+        "content": "80% of users' viewing time is spent above the fold. Remember it."
+    },
+    {
+        "id": 5,
+        "content": "Unless you want your users to practice their clicking skills, in a multi-selectable list, don't forget to provide this time-saving feature."
+    },
+    {
+        "id": 6,
+        "content": "There are patterns that shouldn't be reinvented 🔗"
+    }
+]
+
