@@ -15,6 +15,12 @@ a{
 	color: inherit;
 }
 
+#me-text a, 
+.title-holder a {
+	text-decoration: underline;
+	color: #ce0baa;
+}
+
 ul{
 	list-style: none;
 }
@@ -173,8 +179,9 @@ p {
 }
 
 .me-img {
-	border-radius: 400px;
-	max-height: 14rem !important;
+	border-radius: 100%;
+	/* max-height: 14rem !important; */
+	max-width: 150px;
 }
 
 /*==============*/
@@ -207,6 +214,7 @@ p {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	/* padding: 3em 0em 1em; */
 	/* margin: auto; */
 	/* max-width: 960px; */
@@ -214,7 +222,10 @@ p {
 }
 
 #page-1 {
+	/* display: inline-block; */
 	padding-top: 0;
+	/* justify-content: space-around; */
+	/* vertical-align: middle; */
 }
 
 #page-4 h2 {
@@ -263,23 +274,28 @@ p {
 
 }
 
+.video-title {
+	display: block;
+	width: 100% !important;
+}
+
 .title-holder {
 	position: relative;
 	display:flex;
-	margin: auto;
+	/* margin: auto; */
 	flex-direction: column;
 	align-content: space-between;
 }
 
 .btn-container {
-	margin: 32px;
+	margin: 32px 16px;
 	text-align:center;
 	height: auto;
 }
 
 .flat-btn {
 	/* width: 100%; */
-	font-size: 1em;
+	font-size: 2em;
 	font-weight: 500;
 	font-family: 'Open Sans', sans-serif;
 	display: inline-block;
@@ -461,6 +477,13 @@ p {
 	flex-wrap: wrap;
 }
 
+.about-me {justify-content: spa;}
+
+iframe {
+	width: 100%;
+	max-width: 640px;
+}
+
 .page-section h5{
 	display: inline-block;
 	margin: auto 0;
@@ -474,6 +497,16 @@ p {
 	width: 100%;
 }
 
+.section-images::after {
+  content: '';
+  flex-grow: 1000000000;
+}
+
+.about-me .section-images {
+	width: auto;
+	margin: 0;
+}
+
 .gifs-container {
 	display: flex;
 	width: 100%;
@@ -481,6 +514,8 @@ p {
 
 .section-img {
 	width: 100%;
+	/* max-width: 300px; */
+	/* margin: auto; */
 	/* display:inline-block; */
 	/* max-height: 32rem; */
 	background-size: contain;
@@ -493,17 +528,19 @@ p {
 }
 
 .gg-img {
-	height: 21em;
+	/* height: 21em; */
 }
 
 .section-text {
 	width: 38%;
 	min-width: 15em;
+	/* flex: 0 1 350px; */
 	margin: 32px;
 }
 
 #me-text {
 	width: auto;
+	/* max-width: 45%; */
 }
 
 .section-img-container {
@@ -512,7 +549,8 @@ p {
 	margin-bottom: 32px;
 	margin-left: 16px;
 	margin-right: 16px;
-	flex: 1 384px;
+	flex: 1 258px;
+	/* max-width: 330px; */
 	/* width: 100%; */
 	/* max-width: 50%; */
 }
@@ -611,6 +649,10 @@ p {
 	width: auto;
 }
 
+.contant-link {
+	margin-top: 16px;
+}
+
 /*=========================*/
 /*========sticky bar=======*/
 /*=========================*/
@@ -627,7 +669,7 @@ p {
   display: block;
   background-color: white;
   margin: 0px;
-  padding: 16px;
+  padding: 16px 32px;
 }
 
 
@@ -638,7 +680,7 @@ p {
 @media only screen and (max-device-width: 480px)  {
 
     body {
-        font-size: 38px;
+        font-size: 3em;
         /* max-width: none !important; */
         /* width: 100% !important; */
         margin: 0;
@@ -653,6 +695,11 @@ p {
 		width: 100%;
 		margin: 0 auto 6rem auto;
 		flex: none;
+	}
+
+	.flat-btn {
+		/* border: 2em; */
+		/* text-decoration: initial; */
 	}
 
 	.project-img {
@@ -692,7 +739,8 @@ p {
 	.section-img-container {
 		margin: 1em 32px;
 		width: 100%;
-		flex: 1 542px;
+		flex: 1 428px;
+		max-width:none;
 	}
 
 	.section-text {
