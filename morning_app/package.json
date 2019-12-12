@@ -1,6 +1,6 @@
 {
   "name": "myfirstreact",
-  "homepage" : "http://dordesign/morning_app/public/",
+  "homepage" : "http://dordesign.com/morning_app/public/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
